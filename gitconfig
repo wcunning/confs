@@ -1,0 +1,18 @@
+[core]
+	excludesfile = /afs/umich.edu/user/w/c/wcunning/.gitignore
+[user]
+	name = William Cunningham
+	email = wcunning@umich.edu
+[alias]
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+        df = diff
+        lg = log -p
+        graph = log --graph --oneline --all
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto

@@ -1,0 +1,21 @@
+Host mycroft
+Hostname shub.linuxd.org
+Port 4610
+User wcunning
+PreferredAuthentications password
+
+Host engin
+Hostname login.engin.umich.edu
+User wcunning
+GSSAPIAuthentication yes
+GSSAPIDelegateCredentials yes
+
+
+Host itd
+Hostname login.itd.umich.edu
+User wcunning
+GSSAPIAuthentication yes
+GSSAPIDelegateCredentials yes
+
+Host *
+GSSAPIDelegateCredentials yes
