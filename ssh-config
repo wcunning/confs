@@ -17,5 +17,9 @@ User wcunning
 GSSAPIAuthentication yes
 GSSAPIDelegateCredentials yes
 
+Host qc
+Hostname ysyeh-linux.qualcomm.com
+PreferredAuthentications password
+
 Host *
 GSSAPIDelegateCredentials yes
