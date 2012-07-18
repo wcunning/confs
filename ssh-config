@@ -21,5 +21,11 @@ Host qc
 Hostname ysyeh-linux.qualcomm.com
 PreferredAuthentications password
 
+Host FRP
+Hostname 10.2.242.98
+User toor
+
 Host *
 GSSAPIDelegateCredentials yes
+ForwardX11Trusted yes
+Compression yes
