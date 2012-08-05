@@ -1,0 +1,23 @@
+Config { font = "-misc-fixed-*-*-*-*-14-*-*-*-*-*-*-*"  
+     , bgColor = "#000000"  
+     , fgColor = "grey"  
+     , position = Static { xpos = 0 , ypos = 0, width = 1366, height = 20 }  
+     , commands = 
+	     [ Run Wireless "wlan0" ["-t", "<essid> <quality>"] 10
+	     , Run Network "wlan0" ["-t", "<dev>: <rx>/<tx>"] 10
+	     , Run Network "em1" ["-t", "<dev>: <rx>/<tx>"] 10
+             , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+	     , Run StdinReader
+	     , Run Battery
+              ["-t", "<watts><acstatus><left>%",
+               "-L", "10", "-H", "80", "-p", "3",
+               "--", "-O", "<fc=green>On </fc> - ", "-o", " ",
+               "-L", "-15", "-H", "-5",
+               "-l", "red", "-m", "blue", "-h", "green"]
+              10
+	     , Run Brightness ["-t", "<percent>%"] 10
+	     ]  
+     , sepChar = "%"  
+     , alignSep = "}{"  
+     , template = "%StdinReader% }{ Bat: %battery% | Bright: %bright% | %wlan0% %wlan0wi% | %em1%"     
+     } 

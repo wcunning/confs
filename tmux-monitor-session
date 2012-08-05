@@ -1,0 +1,16 @@
+#################################################
+#						#
+# Tmux Session for System Monitors		#
+#						#
+#################################################
+
+new -s Monitors -n Monitors wicd-curses
+
+#--- Setup Panes ---#
+splitw -h -p 25 -t 0 alsamixer 
+splitw -v -p 25 -t 1 
+splitw -v -p 50 -t 0 htop
+splitw -v -p 55 -t 0 nload
+
+selectp -t 2
+clock-mode

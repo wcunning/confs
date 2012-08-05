@@ -1,0 +1,75 @@
+!-----------------------------------------------!
+! William Cunningham				!
+! wcunning@ieee.org				!
+!						!
+!-----------------------------------------------!
+
+!--- Colors ---!
+
+URxvt*termName:xterm-color
+
+*color0: #000000
+*color8: #555753
+
+*color1: #A40000
+*color9: #EF2929
+
+*color2: #4E9A06
+*color10: #73D216
+
+*color3: #C4A000
+*color11: #EDD400
+
+*color4: #204A87
+*color12: #729FCF
+
+*color5: #5C3566
+*color13: #AD7FA8
+
+*color6: #2B8C8C
+*color14: #40DFDF
+
+*color7: #D3D7CF
+*color15: #F3F3F3
+
+!URxvt*background:	#000000
+URxvt.depth:		32
+URxvt*background:	rgba:0000/0000/0000/cccc
+URxvt*foreground:	#B2B2B2
+
+!*color0:	#000000
+!*color8:	#686868
+
+!*color1:	#B21818
+!*color9:	#FF5454
+
+!*color2:	#18B218
+!*color10:	#54FF54
+
+!*color3:	#B26818
+!*color11:	#FFFF54
+
+!*color4:	#1818B2
+!*color12:	#5454FF
+
+!*color5:	#B218B2
+!*color13:	#FF54FF
+
+!*color6:	#18B2B2
+!*color14:	#54FFFF
+
+!*color7:	#B2B2B2
+!*color15:	#FFFFFF
+
+!--- Fonts ---!
+URxvt.font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-5
+
+!--- Key Bindings ---!
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+
+
+!--- Scripts ---!
+URxvt.perl-ext-common: default
+
+!!! End Config !!!
